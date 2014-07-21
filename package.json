@@ -1,0 +1,46 @@
+{
+  "name": "gulp_demo_2014",
+  "version": "0.0.1",
+  "description": "a starting point for gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zedd45/gulp_demo_2014.git"
+  },
+  "keywords": [
+    "gulp",
+    "demo",
+    "sample",
+    "gulpfile"
+  ],
+  "author": "christopher.keen@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zedd45/gulp_demo_2014/issues"
+  },
+  "homepage": "https://github.com/zedd45/gulp_demo_2014",
+  "devDependencies": {
+    "gulp-karma": "0.0.4",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-sinon": "^1.0.3",
+    "karma-mocha": "^0.1.6",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "should": "^4.0.4",
+    "chai": "^1.9.1",
+    "sinon": "^1.10.3",
+    "mocha": "^1.20.1",
+    "karma": "^0.12.17"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp-util": "^3.0.0",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-jshint": "^1.7.1",
+    "gulp": "^3.8.6"
+  }
+}
