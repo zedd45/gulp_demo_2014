@@ -1,0 +1,24 @@
+{
+    "js": {
+        "src": [
+            "js/*.js"
+        ],
+        "dest": "public/js/"
+    },
+
+    "jshint": {
+        "reporter": "default"
+    },
+
+    "karma": {
+        "configFile": "./spec/karma.config.coffee"
+    },
+
+    "less": {
+       "src": "less/*.less",
+        "watch": [
+            "less/**/*.*"
+        ],
+        "dest": "public/css/"
+    }
+}
