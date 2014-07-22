@@ -1,10 +1,6 @@
 {
   "predef": [ 
-    "ga",
-    "Vu",
-    "Handlebars",
-    "FB",
-    "Bloodhound"
+    "Handlebars"
   ],
   "latedef": true,
   "curly": true,
