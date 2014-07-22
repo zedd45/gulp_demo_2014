@@ -3,7 +3,8 @@
         "src": [
             "js/*.js"
         ],
-        "dest": "public/js/"
+        "dest": "public/js/",
+        "bundleFile": "bundle.js"
     },
 
     "jshint": {

@@ -58,7 +58,7 @@ gulp.task "less", ->
 gulp.task 'uglify', ->
   gulp.src( config.js.src )
     # streams!
-    # .pipe plugins.concat( 'bundle.js' )
+    .pipe plugins.concat( config.js.bundleFile )
     .pipe plugins.uglify() 
     .pipe gulp.dest( config.js.dest ) 
 
@@ -71,6 +71,9 @@ gulp.task 'test', ->
     )).on "error", (err) ->
       throw err
       return  
+
+
+
 
 
 
