@@ -72,7 +72,14 @@ gulp.task 'test', ->
       throw err
       return  
 
-
+# we can specify an array of dependent tasks as the second parameter, 
+# as we do with ['less', 'uglify'] in this case, 
+# in order to run tasks sequentially / prior to our target task
+# this will run both tasks prior to kicking off the watch.
+gulp.task 'watch', ['less', 'uglify'], ->
+  
+  gulp.watch config.js.src, ['lint', 'uglify']
+  gulp.watch config.less.src, ['less']
 
 
 
