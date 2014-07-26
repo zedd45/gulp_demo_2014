@@ -48,8 +48,13 @@ gulp.task "less", ->
     "compress": true
     "sourceMap": true
     "clean-css": true
-    
+  
   gulp.src config.less.src
+    .pipe plugins.plumber()
+    # .pipe plugins.sourcemaps.init()
+    # providing a relative path to gulp.dest allows us to externalize the sourceMap 
+    # (so our users don't pay for it, metaphorically and literally in terms of Bandwidth)
+    # .pipe plugins.sourcemaps.write( config.less.dest ) 
   	.pipe plugins.less( lessOptions )
   	.pipe gulp.dest config.less.dest 
     .on 'error', onError
@@ -80,6 +85,7 @@ gulp.task 'watch', ['less', 'uglify'], ->
   
   gulp.watch config.js.src, ['lint', 'uglify']
   gulp.watch config.less.src, ['less']
+
 
 
 
